@@ -1,0 +1,29 @@
+{
+  "name": "user_stream_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "gridfs-stream": "^1.1.1",
+    "jsonwebtoken": "^9.0.2",
+    "mandrill-api": "^1.0.45",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.4",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.14",
+    "sendgrid": "^5.2.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
