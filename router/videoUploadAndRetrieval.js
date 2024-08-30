@@ -1,6 +1,5 @@
 const express = require('express');
 const multer = require('multer');
-const { GridFsStorage } = require('multer-gridfs-storage');
 const mongoose = require('mongoose');
 const Video = require('../models/videoSchema');
 const authMiddleware = require('../middleware/authMiddleware'); 
