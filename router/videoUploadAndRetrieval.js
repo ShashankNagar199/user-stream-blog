@@ -11,7 +11,10 @@ const getGridFSBucket = require('../config/gridfsStorage');
 
 // Set up GridFS storage
 const storage = multer.memoryStorage();
-const upload = multer({ storage });
+const upload = multer({
+    storage,
+    limits: { fileSize: 6 * 1024 * 1024 } // 6MB
+});
 
 router.post('/upload', authMiddleware, upload.single('video'), async (req, res) => {
     const { title, description } = req.body;
